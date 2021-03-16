@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fire Generator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="generator.js"></script>
+  
+  <script>
+    $( function() {
+       $( "#draggable1" ).draggable();
+       $( "#draggable2" ).draggable();
+       $( "#draggable3" ).draggable();
+     } );
+   </script>
+ 
+
+
+  <style media="screen">
+
+    #draggable { width: 15%; height: 15%; padding: 0.5em; }
+    #draggable2 { width: 30%; height: 30%; padding: 0.5em; }
+    #draggable3 { width: 15%; height: 15%; padding: 0.5em; }
+
+   
+  
+.brush {
+  position: absolute;
+  max-width:174%;
+  height:auto;
+  padding-left:483%;
+  margin-top:70%;
+
+  
+}
+.egg {
+  position: absolute;
+  max-width:100%;
+  height:auto;
+  padding-left:39%;
+  margin-top:188%;
+  z-index: 2;
+  
+}
+.pin {
+  position: absolute;
+  max-width:18%;
+  height:auto;
+  padding-left:20.5%;
+  margin-top:5%;
+  z-index: 2;
+}
+
+.background {
+  position: absolute;
+  max-width:100%;
+  height:auto;
+  z-index: -1;
+  
+  
+}
+
+.fone {
+  position: absolute;
+  max-width:100%;
+  height:auto;
+  z-index: -3;
+  opacity:30%;
+  
+}
+
+.mainpic {
+  position: absolute;
+  max-width:38.3%;
+  height:auto;
+  padding-left:36.97%;
+  margin-top:3.48%;
+  z-index: 0;
+  
+}
+
+.menu {
+  position: absolute;
+  max-width:28.5%;
+  height:auto;
+  padding-left:1.5%;
+  margin-top:5.2%;
+
+}
+
+.ovalgreen {
+  position: absolute;
+  max-width:22.5%;
+  height:auto;
+  padding-left:11%;
+  margin-top:39.5%;
+  z-index: -2;
+
+}
+
+.star2 {
+  position: absolute;
+  max-width:15%;
+  height:auto;
+  padding-left:4.9%;
+  margin-top:33.2%;
+  z-index: -3;
+
+}
+
+.shoka {
+  position: absolute;
+  max-width:15%;
+  height:auto;
+  padding-left:20.5%;
+  margin-top:23.3%;
+
+}
+
+.star {
+  position: absolute;
+  max-width:15.5%;
+  height:auto;
+  padding-left:59.3%;
+  margin-top:6%;
+
+}
+
+.shock2 {
+  position: absolute;
+  max-width:7.8%;
+  height:auto;
+  padding-left:63.2%;
+  margin-top:11.5%;
+
+}
+
+.ovalblack {
+  position: absolute;
+  max-width:24.3%;
+  height:auto;
+  padding-left:75.8%;
+  margin-top:2.6%;
+
+}
+
+.oval {
+  position: absolute;
+  max-width:20.9%;
+  height:auto;
+  padding-left:79.1%;
+  margin-top:34.8%;
+
+}
+
+.star3 {
+  position: absolute;
+  max-width:19%;
+  height:auto;
+  padding-left:84.5%;
+  margin-top:21.9%;
+
+}
+
+.ovalyellow {
+  position: absolute;
+  max-width:15%;
+  height:auto;
+  padding-left:81.3%;
+  margin-top:12.8%;
+
+}
+
+.shocktext {
+  position: absolute;
+  max-width:12.4%;
+  height:auto;
+  padding-left:83.9%;
+  margin-top:43.4%;
+
+}
+
+.lemons {
+  position: absolute;
+  max-width:29%;
+  height:auto;
+  padding-left:58.2%;
+  margin-top:35%;
+  z-index: 2;
+}
+
+.body {
+  overflow-x: hidden;
+}
+
+.shocktext3 {
+  position: absolute;
+  max-width:19%;
+  height:auto;
+  padding-left:41.4%;
+  bottom:4%;
+  z-index: 1;
+
+}
+
+.shocktext2 {
+  position: absolute;
+  max-width:23.1%;
+  height:auto;
+  padding-left:39.6%;
+  bottom:19.5%;
+  z-index: 1;
+
+}
+
+.shocktext4 {
+  position: absolute;
+  max-width:26%;
+  height:auto;
+  padding-left:41.4%;
+  bottom:35.5%;
+  z-index: 1;
+
+}
+
+.shocktext5 {
+  position: absolute;
+  max-width:27%;
+  height:auto;
+  padding-left:69.2%;
+  bottom:20.6%;
+  z-index: 1;
+
+}
+
+.rec1 {
+  position: absolute;
+  max-width:22%;
+  height:auto;
+  padding-left:40%;
+  bottom:1.8%;
+  z-index: 0;
+
+}
+
+.rec2 {
+  position: absolute;
+  max-width:22.3%;
+  height:auto;
+  padding-left:38.7%;
+  bottom:25%;
+  z-index: 0;
+
+}
+
+.rec3 {
+  position: absolute;
+  max-width:25.3%;
+  height:auto;
+  padding-left:39.3%;
+  bottom:17.8%;
+  z-index: 0;
+
+}
+
+.rec4 {
+  position: absolute;
+  max-width:28%;
+  height:auto;
+  padding-left:40.5%;
+  bottom:34%;
+  z-index: 0;
+
+}
+
+.js_container {
+  position: absolute;
+  max-width:100%;
+  height:auto;
+  padding-left:14%;
+  bottom:-8%;
+  z-index: 3;
+}
+
+</style>
+
+
+
+<div class="js_container">
+  <img src="images/egg.png" id="imgClickAndChange" class="draggable" width="33%" onclick="changeImage()" usemap="#SUB15" />
+
+  <script>
+    var counter = 1;
+
+      imgClickAndChange.onclick = function(){
+      if(counter == 0){
+          document.getElementById("imgClickAndChange").src = "images/egg.png";
+          counter++;
+      }
+      else if(counter == 1){
+          document.getElementById("imgClickAndChange").src = "images/bag.png";
+          counter++;
+      }
+      else if(counter == 2){
+          document.getElementById("imgClickAndChange").src = "images/man.png";
+          counter++;
+      }
+      else if(counter == 3){
+          document.getElementById("imgClickAndChange").src = "images/glasses.png";
+          counter = 0;
+      }
+  };</script>
+ </div>
+
+ <script>
+  $( function() {
+    $( ".draggable" ).draggable();
+  } );
+</script>
+
+
+<div id="draggable" class="ui-widget-content">
+  <div id="js_container">
+   </div>
+</div>
+
+
+
+
+
+</head>
+
+
+<body>
+
+  <img class="menu" src="texts/menu.svg" alt="">
+  
+  <img class="mainpic" src="images/water.svg" alt="">
+
+  <img class="background" src="images/mac.svg" alt="">
+
+  <img class="ovalgreen" src="figures/oval3.svg" alt="">
+  <img class="star2" src="figures/star2.svg" alt="">
+  <img class="shoka" src="figures/shoka.png" alt="">
+  <img class="star" src="figures/star.svg" alt="">
+  <img class="ovalblack" src="figures/oval4.svg" alt="">
+  <img class="oval" src="figures/oval.svg" alt="">
+  <img class="star3" src="figures/star3.svg" alt="">
+  <img class="ovalyellow" src="figures/oval2.svg" alt="">
+  <img class="lemons" src="images/lemons.png" alt="">
+
+  <!-- <img class="fone" src="images/fone.png" alt=""> -->
+  
+
+
+  <div class="texts">
+    <img class="shock2" src="texts/shock2.svg" alt="">
+    <img class="shocktext" src="texts/shock.svg" alt="">
+    <img class="shocktext2" src="texts/zatopilo.png" alt="">
+    <img class="shocktext3" src="texts/shock3.svg" alt="">
+    <img class="shocktext4" src="texts/murmansk.png" alt="">
+    <img class="shocktext5" src="texts/kill.png" alt="">
+  </div>
+
+  <div class="blocks">
+    <img class="rec1" src="figures/rec1.svg" alt="">
+    <img class="rec2" src="figures/rec2.svg" alt="">
+    <img class="rec3" src="figures/rec3.svg" alt="">
+    <img class="rec4" src="figures/rec4.svg" alt="">
+    
+  </div>
+
+
+  <div id="draggable1" class="ui-widget-content">
+    <img class="pin" src="images/pin.png" alt="">
+  </div>
+  <div id="draggable3" class="ui-widget-content">
+    <img class="brush" src="images/brush.png" alt="">
+  </div>
+
+  <!-- <div id="draggable2" class="ui-widget-content">
+    <img class="egg" src="images/egg.png" alt="">
+  </div> -->
+
+  
+
+  
+
+</body>
+</html>
