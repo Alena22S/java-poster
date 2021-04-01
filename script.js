@@ -260,14 +260,3 @@ function init() {
   document.addEventListener("touchcancel", touchHandler, true);
 }
 
-var clickms = 100;
-var lastTouchDown = -1;
-
-var d = new Date();
-switch(event.type)
-{
-    case "touchstart": type = "mousedown"; lastTouchDown = d.getTime(); break;
-    case "touchmove": type="mousemove"; lastTouchDown = -1; break;        
-    case "touchend": if(lastTouchDown > -1 && (d.getTime() - lastTouchDown) < clickms){lastTouchDown = -1; type="click"; break;} type="mouseup"; break;
-    default: return;
-}
