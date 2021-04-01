@@ -236,6 +236,33 @@ imgClickAndChange6.onclick = function () {
 };
 
 
+var counter = 1;
+const imgClickAndChange7 = document.getElementById("imgClickAndChange7");
+
+imgClickAndChange7.onclick = function () {
+  if (counter == 0) {
+    imgClickAndChange7.src = "land/lemonsland.png";
+    counter++;
+  } else if (counter == 1) {
+    imgClickAndChange7.src = "images/egg.png";
+    counter++;
+  } else if (counter == 2) {
+    imgClickAndChange7.src = "images/pin.png";
+    counter++;
+  } else if (counter == 3) {
+    imgClickAndChange7.src = "images/eye.png.svg";
+    counter = 0;
+  }
+  
+};
+
+
+
+
+
+
+
+
 function touchHandler(event) {
   var touch = event.changedTouches[0];
 
@@ -260,3 +287,14 @@ function init() {
   document.addEventListener("touchcancel", touchHandler, true);
 }
 
+// var clickms = 100;
+// var lastTouchDown = -1;
+
+// var d = new Date();
+// switch(event.type)
+// {
+//     case "touchstart": type = "mousedown"; lastTouchDown = d.getTime(); break;
+//     case "touchmove": type="mousemove"; lastTouchDown = -1; break;        
+//     case "touchend": if(lastTouchDown > -1 && (d.getTime() - lastTouchDown) < clickms){lastTouchDown = -1; type="click"; break;} type="mouseup"; break;
+//     default: return;
+// }
