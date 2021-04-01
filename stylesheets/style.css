@@ -1,4 +1,7 @@
- 
+body {
+  overflow-x: hidden;
+}
+
 .brush {
   position: absolute;
   max-width:33%;
@@ -79,7 +82,7 @@
   height:auto;
   padding-left:20.5%;
   margin-top:23.3%;
-  z-index:9;
+  z-index:10;
 
 }
 
@@ -124,14 +127,15 @@
 }
 
 
-.lemons {
+.container12 {
   position: absolute;
   max-width:30%;
   height:auto;
   padding-left:58%;
   margin-top:36%;
-  z-index: 0;
+  z-index:9;
 }
+
 
 .body {
   overflow-x: hidden;
@@ -235,7 +239,7 @@
   position: absolute;
   top: 20%;
   left: 40%;
-  z-index:8;
+  z-index:10;
 }
 
 .resizable .resizers{
@@ -243,7 +247,7 @@
   height: 100%;
   border: 2px solid #000000;
   box-sizing: border-box;
-  z-index:8;
+  z-index:10;
 }
 
 .resizable .resizers .resizer{
@@ -253,32 +257,32 @@
   background: white;
   border: 2px solid #000000;
   position: absolute;
-  z-index:8;
+  z-index:10;
 }
 
 .resizable .resizers .resizer.top-left {
   left: -5px;
   top: -5px;
   cursor: nwse-resize; /*resizer cursor*/
-  z-index:8;
+  z-index:10;
 }
 .resizable .resizers .resizer.top-right {
   right: -5px;
   top: -5px;
   cursor: nesw-resize;
-  z-index:8;
+  z-index:10;
 }
 .resizable .resizers .resizer.bottom-left {
   left: -5px;
   bottom: -5px;
   cursor: nesw-resize;
-  z-index:8;
+  z-index:10;
 }
 .resizable .resizers .resizer.bottom-right {
   right: -5px;
   bottom: -5px;
   cursor: nwse-resize;
-  z-index:8;
+  z-index:10;
 }
 
 
@@ -289,11 +293,11 @@
 
 .js_container {
   position: absolute;
-  max-width:100%;
+  max-width:90%;
   height:auto;
   padding-left:14%;
-  margin-top:30%;
-  z-index: 8;
+  margin-top:31%;
+  z-index: 7;
 }
 
 .js_container2 {
@@ -320,7 +324,7 @@
   height:auto;
   padding-left:41.4%;
   margin-top:29.8%;
-  z-index: 9;
+  z-index: 10;
 }
 
 
@@ -330,7 +334,7 @@
   height:auto;
   padding-left:38.9%;
   margin-top:35.5%;
-  z-index: 9;
+  z-index: 10;
 }
 
 .container6 {
@@ -339,7 +343,7 @@
   height:auto;
   padding-left:69.2%;
   margin-top:28.2%;
-  z-index: 8;
+  z-index: 9;
 
 }
 
@@ -362,7 +366,7 @@
   height:auto;
   padding-left:41.4%;
   margin-top:46.2%;
-  z-index: 8;
+  z-index: 10;
 }
 
 .star3 {
@@ -389,7 +393,7 @@
   height:auto;
   padding-left:58%;
   margin-top:8%;
-  z-index: 7;
+  z-index: 8;
 }
 
 .ovalblack {
@@ -420,7 +424,7 @@
   height:auto;
   padding-left:69.2%;
   margin-top:28.2%;
-  z-index: 4;
+  z-index: 9;
 
 }
 
@@ -430,7 +434,7 @@
   height:auto;
   padding-left:83.9%;
   margin-top:43.4%;
-  z-index: 4;
+  z-index: 8;
 
 }
 

@@ -134,7 +134,7 @@ const imgClickAndChange2 = document.getElementById("imgClickAndChange2");
 
 imgClickAndChange2.onclick = function () {
   if (counter == 0) {
-    imgClickAndChange2.src = "images/brush.png";
+    imgClickAndChange2.src = "images/man.png";
     counter++;
   } else if (counter == 1) {
     imgClickAndChange2.src = "images/pin.png";
@@ -300,6 +300,27 @@ imgClickAndChange9.onclick = function () {
     counter++;
   } else if (counter == 3) {
     imgClickAndChange9.src = "land/kapusta.svg";
+    counter = 0;
+  }
+  
+};
+
+
+var counter = 1;
+const imgClickAndChange12 = document.getElementById("imgClickAndChange12");
+
+imgClickAndChange12.onclick = function () {
+  if (counter == 0) {
+    imgClickAndChange12.src = "images/glasses.png";
+    counter++;
+  } else if (counter == 1) {
+    imgClickAndChange12.src = "images/bag.png";
+    counter++;
+  } else if (counter == 2) {
+    imgClickAndChange12.src = "images/bag.png";
+    counter++;
+  } else if (counter == 3) {
+    imgClickAndChange12.src = "figures/star2.svg";
     counter = 0;
   }
   
