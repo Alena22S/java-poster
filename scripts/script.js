@@ -185,6 +185,9 @@ imgClickAndChange4.onclick = function () {
     imgClickAndChange4.src = "texts/perm.svg";
     counter++;
   } else if (counter == 4) {
+    imgClickAndChange4.src = "images/ekb.svg";
+    counter++;
+  } else if (counter == 5) {
     imgClickAndChange4.src = "texts/kirov.svg";
     counter = 0;
   }
@@ -205,8 +208,12 @@ imgClickAndChange5.onclick = function () {
   } else if (counter == 2) {
     imgClickAndChange5.src = "texts/agents.svg";
     counter++;
- 
+
   } else if (counter == 3) {
+    imgClickAndChange5.src = "images/bags.svg";
+    counter++;
+ 
+  } else if (counter == 4) {
     imgClickAndChange5.src = "texts/pojar.svg";
     counter = 0;
   }
@@ -219,13 +226,13 @@ const imgClickAndChange6 = document.getElementById("imgClickAndChange6");
 
 imgClickAndChange6.onclick = function () {
   if (counter == 0) {
-    imgClickAndChange6.src = "texts/kill.svg";
+    imgClickAndChange6.src = "texts/kill.png";
     counter++;
   } else if (counter == 1) {
     imgClickAndChange6.src = "texts/ananas.svg";
     counter++;
   } else if (counter == 2) {
-    imgClickAndChange6.src = "texts/kill.svg";
+    imgClickAndChange6.src = "texts/strana.";
     counter++;
  
   } else if (counter == 3) {
@@ -250,51 +257,78 @@ imgClickAndChange7.onclick = function () {
     imgClickAndChange7.src = "images/pin.png";
     counter++;
   } else if (counter == 3) {
-    imgClickAndChange7.src = "images/eye.png.svg";
+    imgClickAndChange7.src = "images/eye.png";
     counter = 0;
   }
   
 };
 
 
+var counter = 1;
+const imgClickAndChange8 = document.getElementById("imgClickAndChange8");
+
+imgClickAndChange8.onclick = function () {
+  if (counter == 0) {
+    imgClickAndChange8.src = "land/lemonsland.png";
+    counter++;
+  } else if (counter == 1) {
+    imgClickAndChange8.src = "images/egg.png";
+    counter++;
+  } else if (counter == 2) {
+    imgClickAndChange8.src = "images/pin.png";
+    counter++;
+  } else if (counter == 3) {
+    imgClickAndChange8.src = "images/eye.png";
+    counter = 0;
+  }
+  
+};
 
 
+var counter = 1;
+const imgClickAndChange9 = document.getElementById("imgClickAndChange9");
+
+imgClickAndChange9.onclick = function () {
+  if (counter == 0) {
+    imgClickAndChange9.src = "images/brush.png";
+    counter++;
+  } else if (counter == 1) {
+    imgClickAndChange9.src = "land/kapusta.svg";
+    counter++;
+  } else if (counter == 2) {
+    imgClickAndChange9.src = "images/brush.png";
+    counter++;
+  } else if (counter == 3) {
+    imgClickAndChange9.src = "land/kapusta.svg";
+    counter = 0;
+  }
+  
+};
 
 
+function touchHandler(event) {
+  var touch = event.changedTouches[0];
 
+  var simulatedEvent = document.createEvent("MouseEvent");
+      simulatedEvent.initMouseEvent({
+      touchstart: "mousedown",
+      touchmove: "mousemove",
+      touchend: "mouseup"
+  }[event.type], true, true, window, 1,
+      touch.screenX, touch.screenY,
+      touch.clientX, touch.clientY, false,
+      false, false, false, 0, null);
 
-// function touchHandler(event) {
-//   var touch = event.changedTouches[0];
+  touch.target.dispatchEvent(simulatedEvent);
+  event.preventDefault();
+}
 
-//   var simulatedEvent = document.createEvent("MouseEvent");
-//       simulatedEvent.initMouseEvent({
-//       touchstart: "mousedown",
-//       touchmove: "mousemove",
-//       touchend: "mouseup"
-//   }[event.type], true, true, window, 1,
-//       touch.screenX, touch.screenY,
-//       touch.clientX, touch.clientY, false,
-//       false, false, false, 0, null);
+function init() {
+  document.addEventListener("touchstart", touchHandler, true);
+  document.addEventListener("touchmove", touchHandler, true);
+  document.addEventListener("touchend", touchHandler, true);
+  document.addEventListener("touchcancel", touchHandler, true);
+}
 
-//   touch.target.dispatchEvent(simulatedEvent);
-//   event.preventDefault();
-// }
+init();
 
-// function init() {
-//   document.addEventListener("touchstart", touchHandler, true);
-//   document.addEventListener("touchmove", touchHandler, true);
-//   document.addEventListener("touchend", touchHandler, true);
-//   document.addEventListener("touchcancel", touchHandler, true);
-// }
-
-// var clickms = 100;
-// var lastTouchDown = -1;
-
-// var d = new Date();
-// switch(event.type)
-// {
-//     case "touchstart": type = "mousedown"; lastTouchDown = d.getTime(); break;
-//     case "touchmove": type="mousemove"; lastTouchDown = -1; break;        
-//     case "touchend": if(lastTouchDown > -1 && (d.getTime() - lastTouchDown) < clickms){lastTouchDown = -1; type="click"; break;} type="mouseup"; break;
-//     default: return;
-// }

@@ -65,6 +65,12 @@
     usemap="#SUB15"/>  
   </div>
 
+  <div class="container7">
+    <img src="images/brush.png"  id="imgClickAndChange9" class="draggable" width="100%" onclick="changeImage()"
+    usemap="#SUB15"/>  
+  </div>
+
+
 
 
   <div class="shock">
@@ -87,8 +93,12 @@
     <img src="figures/oval4.svg"  class="draggable" width="100%"/>  
   </div>
 
-  <div class="brush">
+  <!-- <div class="brush">
     <img src="images/brush.png"  class="draggable" width="100%"/>  
+  </div> -->
+
+  <div class="shoka">
+    <img src="figures/shoka.png"  class="draggable" width="100%"/>  
   </div>
 
 
@@ -100,13 +110,20 @@
     <img src="texts/shock.svg"  class="draggable" width="100%"/>  
   </div>
 
+
+
+
+
+
+
+
   </div>
 
 
 
   <div class="things">
     <img class="star2" src="figures/star2.svg" alt="">
-    <img class="shoka" src="figures/shoka.png" alt="">
+    
     
     <img class="oval" src="figures/oval.svg" alt="">
     <img class="ovalyellow" src="figures/oval2.svg" alt="">
@@ -146,12 +163,40 @@
     <img class="words" src="ipadport/words.svg" alt="">
     <img class="words2" src="ipadport/words2.svg" alt="">
 
-    <img class="lemonsland" src="land/lemonsland.png" alt="">
+
+    <div class="pjs_container">
+      <img src="land/lemonsland.png" id="imgClickAndChange8" class="draggable" width="90%" onclick="changeImage()"
+        usemap="#SUB15" />
+    </div>
+
+    <div class="kapusta">
+      <img src="land/kapusta.svg" class="draggable" width="90%"/>
+    </div>
+
+
+    <div class="kill2">
+      <img src="ipadport/kill2.svg" class="draggable" width="90%"/>
+    </div>
+
+    <div class="jest2">
+      <img src="ipadport/jest2.svg" class="draggable" width="90%"/>
+    </div>
+
+    <div class="grey2">
+      <img src="ipadport/grey2.svg" class="draggable" width="90%"/>
+    </div>
+
+
+
+    <!-- <div class="brush">
+      <img src="images/brush.png"  class="draggable" width="100%"/>  
+    </div> -->
+
     <img class="explo" src="ipadport/explo.svg" alt="">
-    <img class="kapusta" src="land/kapusta.svg" alt="">
-    <img class="kill2" src="ipadport/kill2.svg" alt="">
-    <img class="grey2" src="ipadport/grey2.svg" alt="">
-    <img class="jest2" src="ipadport/jest2.svg" alt="">
+    <!-- <img class="kapusta" src="land/kapusta.svg" alt=""> -->
+    <!-- <img class="kill2" src="ipadport/kill2.svg" alt=""> -->
+    <!-- <img class="grey2" src="ipadport/grey2.svg" alt="">
+    <img class="jest2" src="ipadport/jest2.svg" alt=""> -->
 
 
   </div>
@@ -168,16 +213,38 @@
         usemap="#SUB15" />
     </div>
 
+    <div class="container11">
+      <img src="texts/zatopilo.svg" id="imgClickAndChange5" class="draggable" width="115%" onclick="changeImage()"
+      usemap="#SUB15"/>  
+  </div>
+
+  <div class="kapusta">
+    <img src="land/kapusta.svg"  class="draggable" width="100%"/>  
+  </div>
+
+  <div class="ibrush">
+    <img src="iphone/ibrush.png"  class="draggable" width="100%"/>  
+  </div>
+
+  <div class="iegg">
+    <img src="iphone/iegg.png"  class="draggable" width="100%"/>  
+  </div>
+
+  <div class="ovalyel">
+    <img src="iphone/ovalyel.svg"  class="draggable" width="100%"/>  
+  </div>
+
 
     <img class="setka3" src="iphone/setka3.svg" alt="">
-    <img class="kapusta" src="land/kapusta.svg" alt="">
+    <!-- <img class="kapusta" src="land/kapusta.svg" alt=""> -->
     <!-- <img class="lemonsland" src="land/lemonsland.png" alt=""> -->
-    <img class="ovalyel" src="iphone/ovalyel.svg" alt="">
+    <!-- <img class="ovalyel" src="iphone/ovalyel.svg" alt=""> -->
     <img class="istroke" src="iphone/istroke.svg" alt="">
-    <img class="iegg" src="iphone/iegg.png" alt="">
-    <img class="ibrush" src="iphone/ibrush.png" alt="">
+    <!-- <img class="iegg" src="iphone/iegg.png" alt=""> -->
+    <!-- <img class="ibrush" src="iphone/ibrush.png" alt=""> -->
     <img class="istar" src="iphone/istar.svg" alt="">
     
+
 
   </div>
 
@@ -196,6 +263,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./scripts/script.js"></script>
+  
 
 
   <script>
@@ -226,8 +294,16 @@ function init() {
   document.addEventListener("touchmove", touchHandler, true);
   document.addEventListener("touchend", touchHandler, true);
   document.addEventListener("touchcancel", touchHandler, true);
+
 }
 </script>
+
+
+
+
+
+
+
 
 </body>
 

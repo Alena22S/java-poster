@@ -79,6 +79,7 @@
   height:auto;
   padding-left:20.5%;
   margin-top:23.3%;
+  z-index:9;
 
 }
 
@@ -292,7 +293,7 @@
   height:auto;
   padding-left:14%;
   margin-top:30%;
-  z-index: 4;
+  z-index: 8;
 }
 
 .js_container2 {
@@ -301,7 +302,7 @@
   height:auto;
   padding-left:26%;
   margin-top:6%;
-  z-index: 8;
+  z-index: 9;
 }
 
 .js_container3 {
@@ -319,7 +320,7 @@
   height:auto;
   padding-left:41.4%;
   margin-top:29.8%;
-  z-index: 8;
+  z-index: 9;
 }
 
 
@@ -329,7 +330,7 @@
   height:auto;
   padding-left:38.9%;
   margin-top:35.5%;
-  z-index: 8;
+  z-index: 9;
 }
 
 .container6 {
@@ -338,7 +339,17 @@
   height:auto;
   padding-left:69.2%;
   margin-top:28.2%;
-  z-index: 6;
+  z-index: 8;
+
+}
+
+.container7 {
+  position: absolute;
+  max-width:33%;
+  height:auto;
+  padding-left:70%;
+  margin-top:11.8%;
+  z-index: 4;
 
 }
 
@@ -351,7 +362,7 @@
   height:auto;
   padding-left:41.4%;
   margin-top:46.2%;
-  z-index: 6;
+  z-index: 8;
 }
 
 .star3 {
@@ -438,7 +449,7 @@
   height:auto;
   padding-left:2.7%;
   margin-top:34%;
-  z-index: 4;
+  z-index: 8;
 }
 
 .grey {
