@@ -1,0 +1,658 @@
+
+/* for ipad landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  .iphone {
+    display: none;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  .alldrags {
+  display: block;
+  }
+
+  .landscape {
+    display: block;
+  }
+
+  .basic_container {
+    display: none;
+  } 
+
+  .button {
+    position: absolute;
+    max-width:43.3%;
+    height:auto;
+    margin-top:4.1%;
+    padding-left:35.2%;
+    z-index:2;
+  }
+  
+  .js_container3 {
+    position: absolute;
+  max-width:24%;
+  height:auto;
+  padding-left:12%;
+  margin-top:53.5%;
+  z-index: -1;
+  }
+
+  .js_container2 {
+    position: absolute;
+    max-width:45%;
+    height:auto;
+    padding-left:29%;
+    margin-top:6%;
+    z-index: 9;
+  }
+
+  .js_container {
+    position: absolute;
+    max-width:100%;
+    height:auto;
+    padding-left:13%;
+    margin-top:40%;
+    z-index: 4;
+  }
+
+  .star2 {
+    position: absolute;
+    max-width:17%;
+    height:auto;
+    padding-left:5.5%;
+    margin-top:43%;
+    z-index: -3;
+  
+  }
+
+  .shoka {
+    position: absolute;
+    max-width:17%;
+    height:auto;
+    padding-left:42%;
+    margin-top:61%;
+  
+  }
+
+  .shoky {
+    position: absolute;
+    max-width:18.5%;
+    height:auto;
+    padding-left:57%;
+    margin-top:6%;
+    z-index: 5;
+  }
+
+  .jest {
+    display: none;
+  }
+
+  .star3 {
+    position: absolute;
+    max-width:13%;
+    height:auto;
+    padding-left:84.5%;
+    margin-top:21.2%;
+    z-index: 0;
+  }
+
+
+  .oval {
+   position: absolute;
+   max-width:22.9%;
+   height:auto;
+   padding-left:77%;
+   margin-top:43.9%;
+  }
+
+  .shockdown {
+    position: absolute;
+    max-width:12.4%;
+    height:auto;
+    padding-left:83.9%;
+    margin-top:55.5%;
+    z-index: 4;
+  }
+  
+
+  .lemonsland {
+    position: absolute;
+    max-width:30%;
+    height:auto;
+    padding-left:58%;
+    margin-top:45%;
+    z-index: 4;
+  }
+
+  .shock {
+    position: absolute;
+    max-width:19%;
+    height:auto;
+    padding-left:41.4%;
+    margin-top:46.2%;
+    z-index: 6;
+  }
+
+  
+
+}
+ 
+@media (min-width: 1025px) and (max-width: 1980px) {
+   
+  .landscape {
+     display: none;
+   }
+
+   .portrait {
+    display: none;
+  }
+
+    .js_container{
+      display: block;
+  }
+
+  .iphone {
+    display: none;
+}
+
+
+}
+ 
+
+@media (max-width: 768px) {
+ 
+  .iphone {
+    display: none;
+  }
+
+  .portrait {
+    display: block;
+  }
+
+  .landscape {
+     display: none;
+  }
+
+  .basic_container {
+    display: none;
+  } 
+
+
+
+.lemonsland {
+  position: absolute;
+  max-width:38%;
+  height:auto;
+  padding-left:63.5%;
+  margin-top:44%;
+  z-index: 3;
+}
+
+.shockdown {
+  position: absolute;
+  max-width:12.4%;
+  height:auto;
+  padding-left:40%;
+  margin-top:96%;
+  z-index: 4;
+}
+
+.oval {
+  position: absolute;
+  max-width:22.9%;
+  height:auto;
+  padding-left:35%;
+  margin-top:85%;
+  z-index: 3;
+ }
+
+ .explo {
+  position: absolute;
+  max-width:110%;
+  height:auto;
+  padding-left:15%;
+  margin-top:55%;
+  z-index: -1;
+ }
+
+ .js_container3 {
+  position: absolute;
+max-width:25%;
+height:auto;
+padding-left:12%;
+margin-top:111%;
+z-index: -1;
+}
+
+.js_container2 {
+  position: absolute;
+  max-width:58%;
+  height:auto;
+  padding-left:25%;
+  margin-top:12%;
+  z-index: 4;
+}
+
+.js_container {
+  position: absolute;
+  max-width:100%;
+  height:auto;
+  padding-left:13%;
+  margin-top:90%;
+  z-index: 5;
+}
+
+.setka2 {
+  position: absolute;
+  max-width:100%;
+  height:auto;
+  z-index:0;
+  
+}
+
+
+.star2 {
+  position: absolute;
+  max-width:20%;
+  height:auto;
+  padding-left:5.5%;
+  margin-top:98%;
+  z-index: -3;
+
+}
+
+.shoka {
+  display: none;
+
+}
+
+.js_container4 {
+  position: absolute;
+  max-width:37%;
+  height:auto;
+  padding-left:45%;
+  margin-top:38.5%;
+  z-index: 4;
+}
+
+.container5 { 
+  position: absolute;
+  max-width:35%;
+  height:auto;
+  padding-left:40%;
+  margin-top:48%;
+  z-index:0;
+}
+
+.shock { 
+  position: absolute;
+  max-width:35%;
+  height:auto;
+  padding-left:38%;
+  margin-top:62%;
+  z-index:0;
+}
+
+
+.ovalblack { 
+  position: absolute;
+  max-width:30%;
+  height:auto;
+  padding-left:0%;
+  margin-top:34%;
+  z-index: 0;
+}
+ 
+.brush { 
+  position: absolute;
+  max-width:40%;
+  height:auto;
+  margin-left:-78%;
+  margin-top:43%;
+  z-index: 0;
+}
+
+.star3 {
+  position: absolute;
+  max-width:15%;
+  height:auto;
+  padding-left:11%;
+  margin-top:58%;
+  z-index: 0;
+}
+
+.ovalyellow {
+  position: absolute;
+  max-width:15%;
+  height:auto;
+  padding-left:6%;
+  margin-top:44%;
+  z-index: 0;
+}
+
+.words {
+  position: absolute;
+  max-width:18%;
+  height:auto;
+  padding-left:11%;
+  margin-top:35%;
+  z-index: 0;
+}
+
+.words2 {
+  position: absolute;
+  max-width:24%;
+  height:auto;
+  padding-left:63%;
+  margin-top:84%;
+  z-index: 0;
+}
+
+
+.button {
+  position: absolute;
+  max-width:54%;
+  height:auto;
+  margin-top:4.4%;
+  padding-left:37.3%;
+  z-index:-1;
+}
+
+.kapusta {
+  position: absolute;
+  max-width:54%;
+  height:auto;
+  margin-top:87%;
+  padding-left:62%;
+  z-index:-1;
+}
+
+
+.shoky {
+  position: absolute;
+  max-width:25%;
+  height:auto;
+  padding-left:63%;
+  margin-top:6%;
+  z-index: 5;
+}
+
+
+.kill,.jest {
+  display: none;
+}
+
+.kill2 {
+  position: absolute;
+  max-width:55%;
+  height:auto;
+  padding-left:39%;
+  margin-top:111%;
+  z-index: 5;
+}
+
+.grey2 {
+  position: absolute;
+  max-width:55%;
+  height:auto;
+  padding-left:63%;
+  margin-top:111%;
+  z-index: -1;
+}
+
+.jest2 {
+  position: absolute;
+  max-width:55%;
+  height:auto;
+  padding-left:63%;
+  margin-top:122%;
+  z-index: -1;
+}
+
+
+
+
+   
+}
+
+
+@media (min-width: 320px) and (max-width: 476px) {
+   
+  .landscape {
+    display: none;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  .things{
+    display: none;
+  }
+
+  .iphone {
+    display: block;
+  }
+
+  /* .alldrags{
+    display: none;
+  } */
+  
+  
+
+  .resizable{
+    display: none;
+  }
+
+  
+
+  .button {
+  position: absolute;
+  max-width:84.5%;
+  height:auto;
+  padding-left:5.8%;
+  margin-top:12.3%;
+  z-index: -1; 
+  }
+
+  .kapusta {
+    position: absolute;
+    max-width:38.3%;
+    height:auto;
+    padding-left:5.8%;
+    margin-top:177%;
+    z-index: 3; 
+    }
+
+    .brush {
+    position: absolute;
+    max-width:30%;
+    height:auto;
+    padding-left:5.8%;
+    margin-top:10%;
+    z-index: 6; 
+
+    }
+
+    .js_container3 {
+    position: absolute;
+    max-width:46%;
+    height:auto;
+    padding-left:46%;
+    margin-top:136%;
+    z-index: -1;
+    }
+
+    .shoky {
+      position: absolute;
+      max-width:43%;
+      height:auto;
+      padding-left:40%;
+      margin-top:135%;
+      z-index: 1;
+      }
+
+
+
+    .ijs_container {
+      position: absolute;
+      max-width:65%;
+      height:auto;
+      padding-left:0%;
+      margin-top:82%;
+      z-index: 5;
+      }
+
+  .js_container2 {
+    display: none;
+  }
+
+  .star3,.ovalblack {
+    display: none;
+  }
+
+
+
+
+  .shockdown {
+    display: none;
+  }
+  
+
+  .setka3 {
+    position: absolute;
+    max-width:100%;
+    height:auto;
+    z-index: -1; 
+    
+  }
+
+  .shock {
+    position: absolute;
+    max-width:60%;
+    height:auto;
+    padding-left:8%;
+    margin-top:14%;
+    
+    z-index: 0; 
+    
+  }
+
+  .js_container4 {
+    position: absolute;
+    max-width:55%;
+    height:auto;
+    padding-left:8%;
+    margin-top:72%;
+    
+    z-index: 0; 
+    
+  }
+
+  .js_container {
+    position: absolute;
+    max-width:55%;
+    height:auto;
+    padding-left:8%;
+    margin-top:72%;
+    
+    z-index: 0; 
+    
+  }
+
+
+  .container5 {
+    position: absolute;
+    max-width:51%;
+    height:auto;
+    padding-left:39%;
+    margin-top:85%;
+    
+    z-index: 0; 
+    
+  }
+
+  .ovalyel {
+    position: absolute;
+    max-width:48%;
+    height:auto;
+    padding-left:20%;
+    margin-top:214%;
+    
+    z-index: 1; 
+    
+  }
+
+
+  .istroke {
+    position: absolute;
+    max-width:55%;
+    height:auto;
+    padding-left:41%;
+    margin-top:195%;
+    
+    z-index: 0; 
+    
+  }
+
+
+  .iegg {
+    position: absolute;
+    max-width:42%;
+    height:auto;
+    padding-left:56%;
+    margin-top:195%;
+    
+    z-index: 0; 
+    
+  }
+
+  .ibrush {
+    position: absolute;
+    max-width:68%;
+    height:auto;
+    padding-left:32%;
+    margin-top:148%;
+    
+    z-index: 1; 
+  }
+
+    .istar {
+      position: absolute;
+      max-width:45%;
+      height:auto;
+      padding-left:29%;
+      margin-top:173%;
+      
+      z-index: 0; 
+    }
+
+
+
+
+
+}
+  
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+  
+
+
+
+
