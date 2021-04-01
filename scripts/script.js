@@ -232,7 +232,7 @@ imgClickAndChange6.onclick = function () {
     imgClickAndChange6.src = "texts/ananas.svg";
     counter++;
   } else if (counter == 2) {
-    imgClickAndChange6.src = "texts/strana.";
+    imgClickAndChange6.src = "texts/strana.svg";
     counter++;
  
   } else if (counter == 3) {
