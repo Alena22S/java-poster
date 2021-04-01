@@ -2,393 +2,227 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fire Generator</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
-  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
-  <script src="generator.js"></script>
-  
-  <script>
-    $( function() {
-       $( "#draggable1" ).draggable();
-       $( "#draggable2" ).draggable();
-       $( "#draggable3" ).draggable();
-     } );
-   </script>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="stylesheet" href="./stylesheets/responsive.css">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
  
-
-
-  <style media="screen">
-
-    #draggable { width: 15%; height: 15%; padding: 0.5em; }
-    #draggable2 { width: 30%; height: 30%; padding: 0.5em; }
-    #draggable3 { width: 15%; height: 15%; padding: 0.5em; }
-
-   
-  
-.brush {
-  position: absolute;
-  max-width:174%;
-  height:auto;
-  padding-left:483%;
-  margin-top:70%;
-
-  
-}
-.egg {
-  position: absolute;
-  max-width:100%;
-  height:auto;
-  padding-left:39%;
-  margin-top:90%;
-  z-index: 2;
-  
-}
-.pin {
-  position: absolute;
-  max-width:18%;
-  height:auto;
-  padding-left:20.5%;
-  margin-top:5%;
-  z-index: 2;
-}
-
-.background {
-  position: absolute;
-  max-width:100%;
-  height:auto;
-  z-index: -1;
-  
-  
-}
-
-.fone {
-  position: absolute;
-  max-width:100%;
-  height:auto;
-  z-index: -3;
-  opacity:30%;
-  
-}
-
-.mainpic {
-  position: absolute;
-  max-width:38.3%;
-  height:auto;
-  padding-left:36.97%;
-  margin-top:3.48%;
-  z-index: 0;
-  
-}
-
-.menu {
-  position: absolute;
-  max-width:28.5%;
-  height:auto;
-  padding-left:1.5%;
-  margin-top:5.2%;
-
-}
-
-.ovalgreen {
-  position: absolute;
-  max-width:22.5%;
-  height:auto;
-  padding-left:11%;
-  margin-top:39.5%;
-  z-index: -2;
-
-}
-
-.star2 {
-  position: absolute;
-  max-width:15%;
-  height:auto;
-  padding-left:4.9%;
-  margin-top:33.2%;
-  z-index: -3;
-
-}
-
-.shoka {
-  position: absolute;
-  max-width:15%;
-  height:auto;
-  padding-left:20.5%;
-  margin-top:23.3%;
-
-}
-
-.star {
-  position: absolute;
-  max-width:15.5%;
-  height:auto;
-  padding-left:59.3%;
-  margin-top:6%;
-
-}
-
-.shock2 {
-  position: absolute;
-  max-width:7.8%;
-  height:auto;
-  padding-left:63.2%;
-  margin-top:11.5%;
-
-}
-
-.ovalblack {
-  position: absolute;
-  max-width:24.3%;
-  height:auto;
-  padding-left:75.8%;
-  margin-top:2.6%;
-
-}
-
-.oval {
-  position: absolute;
-  max-width:20.9%;
-  height:auto;
-  padding-left:79.1%;
-  margin-top:34.8%;
-
-}
-
-.star3 {
-  position: absolute;
-  max-width:19%;
-  height:auto;
-  padding-left:84.5%;
-  margin-top:21.9%;
-
-}
-
-.ovalyellow {
-  position: absolute;
-  max-width:15%;
-  height:auto;
-  padding-left:81.3%;
-  margin-top:12.8%;
-
-}
-
-.shocktext {
-  position: absolute;
-  max-width:12.4%;
-  height:auto;
-  padding-left:83.9%;
-  margin-top:43.4%;
-
-}
-
-.lemons {
-  position: absolute;
-  max-width:29%;
-  height:auto;
-  padding-left:58.2%;
-  margin-top:35%;
-  z-index: 2;
-}
-
-.body {
-  overflow-x: hidden;
-}
-
-.shocktext3 {
-  position: absolute;
-  max-width:19%;
-  height:auto;
-  padding-left:41.4%;
-  margin-top:46.2%;
-  z-index: 1;
-
-}
-
-.shocktext2 {
-  position: absolute;
-  max-width:23.1%;
-  height:auto;
-  padding-left:39.6%;
-  margin-top:36%;
-  z-index: 1;
-
-}
-
-.shocktext4 {
-  position: absolute;
-  max-width:26%;
-  height:auto;
-  padding-left:41.4%;
-  margin-top:29.8%;
-  z-index: 1;
-
-}
-
-.shocktext5 {
-  position: absolute;
-  max-width:27%;
-  height:auto;
-  padding-left:69.2%;
-  margin-top:28.2%;
-  z-index: 1;
-
-}
-
-.rec1 {
-  position: absolute;
-  max-width:22%;
-  height:auto;
-  padding-left:40%;
-  margin-top:45.1%;
-  z-index: 0;
-
-}
-
-.rec2 {
-  position: absolute;
-  max-width:22.3%;
-  height:auto;
-  padding-left:38.7%;
-  margin-top:35.3%;
-  z-index: 0;
-
-}
-
-.rec3 {
-  position: absolute;
-  max-width:25.3%;
-  height:auto;
-  padding-left:39.3%;
-  margin-top:38.8%;
-  z-index: 0;
-
-}
-
-.rec4 {
-  position: absolute;
-  max-width:28%;
-  height:auto;
-  padding-left:40.5%;
-  margin-top:29%;
-  z-index: 0;
-
-}
-
-.js_container {
-  position: absolute;
-  max-width:100%;
-  height:auto;
-  padding-left:14%;
-  bottom:-8%;
-  z-index: 3;
-}
-
-</style>
-
-
-
-<div class="js_container">
-  <img src="images/egg.png" id="imgClickAndChange" class="draggable" width="33%" onclick="changeImage()" usemap="#SUB15" />
-
-  <script>
-    var counter = 1;
-
-      imgClickAndChange.onclick = function(){
-      if(counter == 0){
-          document.getElementById("imgClickAndChange").src = "images/egg.png";
-          counter++;
-      }
-      else if(counter == 1){
-          document.getElementById("imgClickAndChange").src = "images/bag.png";
-          counter++;
-      }
-      else if(counter == 2){
-          document.getElementById("imgClickAndChange").src = "images/man.png";
-          counter++;
-      }
-      else if(counter == 3){
-          document.getElementById("imgClickAndChange").src = "images/glasses.png";
-          counter = 0;
-      }
-  };</script>
- </div>
-
- <script>
-  $( function() {
-    $( ".draggable" ).draggable();
-  } );
-</script>
-
-
-<div id="draggable" class="ui-widget-content">
-  <div id="js_container">
-   </div>
-</div>
-
-
-
-
 
 </head>
 
 
 <body>
-
-  <img class="menu" src="texts/menu.svg" alt="">
-  
-  <img class="mainpic" src="images/water.svg" alt="">
-
-  <img class="background" src="images/mac.svg" alt="">
-
-  <img class="ovalgreen" src="figures/oval3.svg" alt="">
-  <img class="star2" src="figures/star2.svg" alt="">
-  <img class="shoka" src="figures/shoka.png" alt="">
-  <img class="star" src="figures/star.svg" alt="">
-  <img class="ovalblack" src="figures/oval4.svg" alt="">
-  <img class="oval" src="figures/oval.svg" alt="">
-  <img class="star3" src="figures/star3.svg" alt="">
-  <img class="ovalyellow" src="figures/oval2.svg" alt="">
-  <img class="lemons" src="images/lemons.png" alt="">
-
-  <img class="fone" src="images/fone.png" alt="">
   
 
+  
+  <div class='resizable'>
+    <div class='resizers'>
+      <div class='resizer top-left'></div>
+      <div class='resizer top-right'></div>
+      <div class='resizer bottom-left'></div>
+      <div class='resizer bottom-right'></div>
+    </div>
+  </div>
+  
 
-  <div class="texts">
-    <img class="shock2" src="texts/shock2.svg" alt="">
-    <img class="shocktext" src="texts/shock.svg" alt="">
-    <img class="shocktext2" src="texts/zatopilo.png" alt="">
-    <img class="shocktext3" src="texts/shock3.svg" alt="">
-    <img class="shocktext4" src="texts/murmansk.png" alt="">
-    <img class="shocktext5" src="texts/kill.png" alt="">
+  <div class="alldrags">
+
+  <div class="js_container">
+    <img src="images/egg.png" id="imgClickAndChange" class="draggable" width="33%" onclick="changeImage()"
+      usemap="#SUB15" />
   </div>
 
-  <div class="blocks">
-    <img class="rec1" src="figures/rec1.svg" alt="">
-    <img class="rec2" src="figures/rec2.svg" alt="">
-    <img class="rec3" src="figures/rec3.svg" alt="">
-    <img class="rec4" src="figures/rec4.svg" alt="">
+
+  <div class="js_container2">
+    <img src="images/pin.png" id="imgClickAndChange2" class="draggable" width="36%" onclick="changeImage()"
+      usemap="#SUB15" />
+  </div>
+
+
+  <div class="js_container3">
+    <img src="figures/oval3.svg" id="imgClickAndChange3" class="draggable" width="89%" onclick="changeImage()"
+      usemap="#SUB15" />
+  </div>
+
+  <div class="js_container4">
+    <img src="texts/murmansk.svg" id="imgClickAndChange4" class="draggable" width="110%" onclick="changeImage()"
+      usemap="#SUB15" />
+  </div>
+
+
+  <div class="container5">
+      <img src="texts/zatopilo.svg" id="imgClickAndChange5" class="draggable" width="115%" onclick="changeImage()"
+      usemap="#SUB15"/>  
+  </div>
+
+
+  <div class="container6">
+    <img src="texts/kill.png"  id="imgClickAndChange6" class="draggable" width="100%" onclick="changeImage()"
+    usemap="#SUB15"/>  
+  </div>
+
+
+
+  <div class="shock">
+    <img src="texts/shock3.svg" class="draggable" width="100%">  
+  </div>
+
+  <div class="star3">
+    <img src="figures/star3.svg"  class="draggable" width="115%"/>  
+  </div>
+
+  <div class="jest">
+    <img src="texts/jest.svg"  class="draggable" width="115%"/>  
+  </div>
+
+  <div class="shoky">
+    <img src="texts/shoky.svg"  class="draggable" width="120%"/>  
+  </div>
+
+  <div class="ovalblack">
+    <img src="figures/oval4.svg"  class="draggable" width="100%"/>  
+  </div>
+
+  <div class="brush">
+    <img src="images/brush.png"  class="draggable" width="100%"/>  
+  </div>
+
+
+  <!-- <div class="kill">
+    <img src="texts/kill.png"  class="draggable" width="100%"/>  
+  </div> -->
+
+  <div class="shockdown">
+    <img src="texts/shock.svg"  class="draggable" width="100%"/>  
+  </div>
+
+  </div>
+
+
+
+  <div class="things">
+    <img class="star2" src="figures/star2.svg" alt="">
+    <img class="shoka" src="figures/shoka.png" alt="">
     
+    <img class="oval" src="figures/oval.svg" alt="">
+    <img class="ovalyellow" src="figures/oval2.svg" alt="">
+    <!-- <img class="rec1" src="figures/rec1.svg" alt=""> -->
   </div>
 
+  <div class="basic_container" class="draggable">
 
-  <div id="draggable1" class="ui-widget-content">
-    <img class="pin" src="images/pin.png" alt="">
-  </div>
-  <div id="draggable3" class="ui-widget-content">
-    <img class="brush" src="images/brush.png" alt="">
+    <img class="menu" src="texts/menu.svg" alt="">
+    <img class="background" src="images/mac.svg" alt="">
+  
+
+    <!-- <img class="star2" src="figures/star2.svg" alt="">
+    <img class="shoka" src="figures/shoka.png" alt="">
+    
+    <img class="oval" src="figures/oval.svg" alt="">
+    <img class="ovalyellow" src="figures/oval2.svg" alt="">
+    <img class="rec1" src="figures/rec1.svg" alt=""> -->
+
   </div>
 
-  <div id="draggable2" class="ui-widget-content">
-    <img class="egg" src="images/egg.png" alt="">
+  <div class='landscape'>
+    <img class="setka" src="land/land.svg" alt="">
+    <img class="kapusta" src="land/kapusta.svg" alt="">
+    <img class="grey" src="land/grey.svg" alt="">
+    <!-- <img class="lemonsland" src="land/lemonsland.png" alt=""> -->
+
+    <div class="lemonsland">
+      <img src="land/lemonsland.png"  class="draggable" width="100%"/>  
+    </div>
+
+
+  </div>
+
+  <div class='portrait'>
+    <img class="setka2" src="ipadport/setkaport.svg" alt="">
+    <img class="words" src="ipadport/words.svg" alt="">
+    <img class="words2" src="ipadport/words2.svg" alt="">
+
+    <img class="lemonsland" src="land/lemonsland.png" alt="">
+    <img class="explo" src="ipadport/explo.svg" alt="">
+    <img class="kapusta" src="land/kapusta.svg" alt="">
+    <img class="kill2" src="ipadport/kill2.svg" alt="">
+    <img class="grey2" src="ipadport/grey2.svg" alt="">
+    <img class="jest2" src="ipadport/jest2.svg" alt="">
+
+
+  </div>
+
+  <div class='iphone'>
+
+
+    <div class="lemonsland">
+      <img src="land/lemonsland.png"  class="draggable" width="100%"/>  
+    </div>
+
+    <img class="setka3" src="iphone/setka3.svg" alt="">
+    <img class="kapusta" src="land/kapusta.svg" alt="">
+    <!-- <img class="lemonsland" src="land/lemonsland.png" alt=""> -->
+    <img class="ovalyel" src="iphone/ovalyel.svg" alt="">
+    <img class="istroke" src="iphone/istroke.svg" alt="">
+    <img class="iegg" src="iphone/iegg.png" alt="">
+    <img class="ibrush" src="iphone/ibrush.png" alt="">
+    <img class="istar" src="iphone/istar.svg" alt="">
+    
+
   </div>
 
   
 
-  
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/draggable/1.0.0-beta.12/draggable.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./scripts/script.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+      $("img").dblclick(function(){
+        $(this).hide();
+      });
+    });
+    </script>
+
+  <img id="image" src="images/water.png" class=button class="draggable" onClick="imgsrc();">
+
+  <script language="javascript">
+    var i=0;
+    var image = document.getElementById("image");
+    // Добавте свои картинки через запятую
+    var imgs = ['images/girl.svg','images/donald.svg','images/water.png','images/tree.png','images/tv.png'];
+    function imgsrc() {
+        i++;
+        i %= imgs.length;
+        image.src = imgs[i];
+    }
+</script>
+
+<script>
+function init() {
+  document.addEventListener("touchstart", touchHandler, true);
+  document.addEventListener("touchmove", touchHandler, true);
+  document.addEventListener("touchend", touchHandler, true);
+  document.addEventListener("touchcancel", touchHandler, true);
+}
+</script>
 
 </body>
+
 </html>
