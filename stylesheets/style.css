@@ -465,3 +465,14 @@ body {
   z-index:-1;
 }
 
+
+.plus {
+  position: absolute;
+  max-width:2.5%;
+  height:auto;
+  padding-left:37.6%;
+  margin-top:4.3%;
+  
+  z-index:2;
+}
+
